@@ -105,11 +105,12 @@ bool createNode(tPosL *p);
 tPosL findPosition(tItemL d, tProductList L);
 
 /*
- * OBJETIVO: Devuelve la posición del elemento de la lista que coincida con el producto indicado
+ * OBJETIVO: devuelve la posición del elemento de la lista que coincida con el producto indicado
              (o LNULL si no existe tal elemento).
  * ENTRADA:  -tItemL: cojunto de datos de un producto de la lista.
  *           -tProductList: lista de productos.
  * SALIDA: posicion del producto indicado.
+ * PRECD: la posición indicada es una posición válida en la lista o bien nula (LNULL).
 */
 
 bool insertItem(tItemL d, tProductList *L);
