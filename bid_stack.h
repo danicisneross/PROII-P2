@@ -46,7 +46,7 @@ bool isEmptyStack(tStack stack);
  * OBJETIVO: determina si una pila esta vacia.
  * ENTRADA: -tStack: pila de pujas.
  * SALIDA: un valor de tipo bool donde aparece:
- *              Verdadero:si esta vacia.
+ *              Verdadero: si esta vacia.
  *              Falso: en caso contrario.
 */
 
@@ -67,7 +67,7 @@ void pop(tStack *stack);
  * OBJETIVO: elimina de la pila el elemento situado en la cima.
  * ENTRADA: -tStack: pila de pujas.
  * SALIDA: la pila sin dicho elemento.
- * PRECD: La pila no esta vacia.
+ * PRECD: la pila no esta vacia.
 */
 
 tItemS peek(tStack stack);
@@ -76,7 +76,7 @@ tItemS peek(tStack stack);
  * OBJETIVO: recupera el elemento de la cima sin eliminarlo.
  * ENTRADA: -tStack: pila de pujas.
  * SALIDA: el elemento de la cima.
- * PRECD: La pila no esta vacia.
+ * PRECD: la pila no esta vacia.
 */
 
 #endif

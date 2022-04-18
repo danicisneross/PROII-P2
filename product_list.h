@@ -12,6 +12,7 @@
 
 #include "types.h"
 #include "stdbool.h"
+#include "bid_stack.h"
 
 #define LNULL NULL
 
@@ -23,6 +24,7 @@ typedef struct {
     tProductCategory productCategory;
     tProductPrice productPrice;
     tBidCounter bidCounter;
+    tStack bidStack;
 } tItemL;
 
 struct tProductList {
@@ -35,7 +37,7 @@ typedef tPosL tProductList;
 void createEmptyList(tProductList *L);
 
 /*
- * OBJETIVO: crear una lista vacia.
+ * OBJETIVO: crear una lista ordenada vacia.
  * ENTRADA: -tProductList: lista.
  * SALIDA: una lista vacia.
  * POSTCD: la lista queda inicializada y no contine elementos.
@@ -116,15 +118,12 @@ tPosL findPosition(tItemL d, tProductList L);
 bool insertItem(tItemL d, tProductList *L);
 
 /*
- * OBJETIVO: inserta un elemento en la lista antes de la posición indicada. Si la posición es LNULL,
-             entonces se añade al final.
+ * OBJETIVO: inserta un elemento en la lista de forma ordenada por el campo productId.
  * ENTRADA: -tItemL: cojunto de datos de un producto de la lista.
- *          -tPosL: posicion de un elemento de la lista.
  *          -tProductList: lista de productos.
  * SALIDA: un valor de tipo bool donde aparece:
  *              Verdadero: si el elemento fue insertado.
  *              Falso: en caso contrario.
- * PRECD: la posición indicada es una posición válida en la lista o bien nula (LNULL).
  * POSTCD: las posiciones de los elementos de la lista posteriores a la del
            elemento insertado pueden haber variado.
 */
@@ -136,7 +135,8 @@ void deleteAtPosition(tPosL p, tProductList *L);
  * ENTRADA: -tPosL: posicion de un elemento de la lista.
  *          -tProductList: lista de productos.
  * SALIDA: la lista sin dicha posicion (borrado el elemento que contenia).
- * PRECD: la posición indicada es una posición válida en la lista.
+ * PRECD: la posición indicada es una posición válida en la lista y el producto en dicha
+ *        posicion tiene una pila de pujas vacía.
  * POSTCD: las posiciones de los elementos de la lista posteriores a la
            posicion eliminada pueden haber variado.
 */

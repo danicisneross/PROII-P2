@@ -1,0 +1,5 @@
+# ninja log v5
+0	34	1650235932580870224	CMakeFiles/main.dir/bid_stack.c.o	52789fcdde230945
+0	39	1650235932588870177	CMakeFiles/main.dir/product_list.c.o	35e2a9cbf2e75e11
+34	51	1650307840662722732	../bin/main	54829665b1588fdb
+0	34	1650307840646722744	CMakeFiles/main.dir/main.c.o	685b3f0affe7c441
