@@ -50,14 +50,14 @@ cmake_ninja_workdir = /home/dani/Escritorio/PROII-P2/cmake-build-debug/
 build cmake_object_order_depends_target_test_bid_stack: phony || CMakeFiles/test_bid_stack.dir
 
 build CMakeFiles/test_bid_stack.dir/test_bid_stack.c.o: C_COMPILER__test_bid_stack_Debug /home/dani/Escritorio/PROII-P2/test_bid_stack.c || cmake_object_order_depends_target_test_bid_stack
-  DEFINES = -DINPUT_FILE=\"new.txt\"
+  DEFINES = -DINPUT_FILE=\"bid.txt\"
   DEP_FILE = CMakeFiles/test_bid_stack.dir/test_bid_stack.c.o.d
   FLAGS = -g -Wall -Wextra -std=gnu99
   OBJECT_DIR = CMakeFiles/test_bid_stack.dir
   OBJECT_FILE_DIR = CMakeFiles/test_bid_stack.dir
 
 build CMakeFiles/test_bid_stack.dir/bid_stack.c.o: C_COMPILER__test_bid_stack_Debug /home/dani/Escritorio/PROII-P2/bid_stack.c || cmake_object_order_depends_target_test_bid_stack
-  DEFINES = -DINPUT_FILE=\"new.txt\"
+  DEFINES = -DINPUT_FILE=\"bid.txt\"
   DEP_FILE = CMakeFiles/test_bid_stack.dir/bid_stack.c.o.d
   FLAGS = -g -Wall -Wextra -std=gnu99
   OBJECT_DIR = CMakeFiles/test_bid_stack.dir
@@ -89,14 +89,14 @@ build ../bin/test_bid_stack: C_EXECUTABLE_LINKER__test_bid_stack_Debug CMakeFile
 build cmake_object_order_depends_target_test_product_list: phony || CMakeFiles/test_product_list.dir
 
 build CMakeFiles/test_product_list.dir/test_product_list.c.o: C_COMPILER__test_product_list_Debug /home/dani/Escritorio/PROII-P2/test_product_list.c || cmake_object_order_depends_target_test_product_list
-  DEFINES = -DINPUT_FILE=\"new.txt\"
+  DEFINES = -DINPUT_FILE=\"bid.txt\"
   DEP_FILE = CMakeFiles/test_product_list.dir/test_product_list.c.o.d
   FLAGS = -g -Wall -Wextra -std=gnu99
   OBJECT_DIR = CMakeFiles/test_product_list.dir
   OBJECT_FILE_DIR = CMakeFiles/test_product_list.dir
 
 build CMakeFiles/test_product_list.dir/product_list.c.o: C_COMPILER__test_product_list_Debug /home/dani/Escritorio/PROII-P2/product_list.c || cmake_object_order_depends_target_test_product_list
-  DEFINES = -DINPUT_FILE=\"new.txt\"
+  DEFINES = -DINPUT_FILE=\"bid.txt\"
   DEP_FILE = CMakeFiles/test_product_list.dir/product_list.c.o.d
   FLAGS = -g -Wall -Wextra -std=gnu99
   OBJECT_DIR = CMakeFiles/test_product_list.dir
@@ -128,21 +128,21 @@ build ../bin/test_product_list: C_EXECUTABLE_LINKER__test_product_list_Debug CMa
 build cmake_object_order_depends_target_main: phony || CMakeFiles/main.dir
 
 build CMakeFiles/main.dir/main.c.o: C_COMPILER__main_Debug /home/dani/Escritorio/PROII-P2/main.c || cmake_object_order_depends_target_main
-  DEFINES = -DINPUT_FILE=\"new.txt\"
+  DEFINES = -DINPUT_FILE=\"bid.txt\"
   DEP_FILE = CMakeFiles/main.dir/main.c.o.d
   FLAGS = -g -Wall -Wextra -std=gnu99
   OBJECT_DIR = CMakeFiles/main.dir
   OBJECT_FILE_DIR = CMakeFiles/main.dir
 
 build CMakeFiles/main.dir/product_list.c.o: C_COMPILER__main_Debug /home/dani/Escritorio/PROII-P2/product_list.c || cmake_object_order_depends_target_main
-  DEFINES = -DINPUT_FILE=\"new.txt\"
+  DEFINES = -DINPUT_FILE=\"bid.txt\"
   DEP_FILE = CMakeFiles/main.dir/product_list.c.o.d
   FLAGS = -g -Wall -Wextra -std=gnu99
   OBJECT_DIR = CMakeFiles/main.dir
   OBJECT_FILE_DIR = CMakeFiles/main.dir
 
 build CMakeFiles/main.dir/bid_stack.c.o: C_COMPILER__main_Debug /home/dani/Escritorio/PROII-P2/bid_stack.c || cmake_object_order_depends_target_main
-  DEFINES = -DINPUT_FILE=\"new.txt\"
+  DEFINES = -DINPUT_FILE=\"bid.txt\"
   DEP_FILE = CMakeFiles/main.dir/bid_stack.c.o.d
   FLAGS = -g -Wall -Wextra -std=gnu99
   OBJECT_DIR = CMakeFiles/main.dir
